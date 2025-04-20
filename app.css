@@ -6,3 +6,14 @@
 * {
     font-family: RobotoReg;
 }
+
+:root {
+    --first-color: #0d6efd;
+    --second-color: #dc3545;
+    --third-color: #fff;
+    --fourth-color: #fd7e14;
+}
+
+#navbar {
+    background: linear-gradient(to left, var(--first-color), var(--second-color));
+}
