@@ -1,0 +1,8 @@
+@font-face {
+    font-family: RobotoReg;
+    src: url(/Resources/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    font-family: RobotoReg;
+}
