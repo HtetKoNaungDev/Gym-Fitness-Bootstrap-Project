@@ -7,6 +7,39 @@
 /* Universal Selector */
 * {
     font-family: RobotoReg;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left, var(--first-color), var(--second-color));
+}
+
+/* Global Sectors */
+section {
+    padding: 40px 0;
+}
+
+.main-heading {
+    margin: 20px 0;
+    font-size: 4rem;
+    text-align: center;
+    color: var(--third-color);
+}
+
+.sub-heading {
+    margin: 20px 0;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--fourth-color);
+}
+
+.heading-line {
+    width: 150px;
+    height: 3px;
+    background-color: var(--fourth-color);
+    margin: 40px auto;
 }
 
 /* CSS variable */
