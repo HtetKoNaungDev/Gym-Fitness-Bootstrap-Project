@@ -1,12 +1,15 @@
+/* Roboto Font */
 @font-face {
     font-family: RobotoReg;
     src: url(/Resources/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
 }
 
+/* Universal Selector */
 * {
     font-family: RobotoReg;
 }
 
+/* CSS variable */
 :root {
     --first-color: #0d6efd;
     --second-color: #dc3545;
@@ -14,6 +17,35 @@
     --fourth-color: #fd7e14;
 }
 
+/* Navigation CSS */
 #navbar {
     background: linear-gradient(to left, var(--first-color), var(--second-color));
+}
+
+/* Hero Section CSS */
+.header {
+    height: 676px;
+    width: 100%;
+    position: relative;
+}
+
+.header video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.header .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left, var(--first-color), var(--second-color));
+    z-index: -1;
+    mix-blend-mode: overlay;
 }
