@@ -43,15 +43,6 @@ section {
     margin: 40px auto;
 }
 
-/* Global Card Image Selector */
-.hover-scale {
-    transition: transform 0.3s ease;
-}
-
-.hover-scale:hover {
-    transform: scale(1.05);
-}
-
 /* CSS variable */
 :root {
     --first-color: #0d6efd;
@@ -91,4 +82,27 @@ section {
     background: linear-gradient(to left, var(--first-color), var(--second-color));
     z-index: -1;
     mix-blend-mode: overlay;
+}
+
+/* Service Section Card Image Selector */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Membership Plan Section */
+.plan-2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.recommended {
+    width: 300px;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    rotate: 45deg;
 }
