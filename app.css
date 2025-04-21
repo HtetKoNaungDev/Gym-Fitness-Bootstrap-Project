@@ -32,6 +32,7 @@ section {
     margin: 20px 0;
     font-size: 2rem;
     text-align: center;
+    text-transform: uppercase;
     color: var(--fourth-color);
 }
 
@@ -40,6 +41,15 @@ section {
     height: 3px;
     background-color: var(--fourth-color);
     margin: 40px auto;
+}
+
+/* Global Card Image Selector */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
 }
 
 /* CSS variable */
