@@ -102,7 +102,17 @@ section {
 .recommended {
     width: 300px;
     position: absolute;
-    top: 40px;
-    left: 150px;
+    top: 7.5%;
+    left: 42%;
     rotate: 45deg;
+}
+
+/* Testimonial Section CSS */
+#testimonial img {
+    height: 350px;
+    object-position: 100% 20%;
+}
+
+.carousel-indicators button[type="button"] {
+    height: 10px;
 }
