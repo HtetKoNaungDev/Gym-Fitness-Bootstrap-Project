@@ -125,3 +125,10 @@ section {
 .blog-card:hover .blog-img {
     transform: scale(1.1);
 }
+
+/* FAQ Section CSS */
+.accordion-button:not(.collapsed) {
+    background-color: orange !important;
+    color: white !important;
+}  
+  
