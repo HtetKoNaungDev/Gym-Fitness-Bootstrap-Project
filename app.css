@@ -116,3 +116,12 @@ section {
 .carousel-indicators button[type="button"] {
     height: 10px;
 }
+
+/* Blogs Section CSS */
+.blog-img {
+    transition: all 0.5s ease;
+}
+
+.blog-card:hover .blog-img {
+    transform: scale(1.1);
+}
