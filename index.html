@@ -65,11 +65,11 @@
                 <!-- Sign In/Up -->
                 <ul class="navbar-nav">
                     <li class="nav-item mx-1">
-                        <a href="#" class="nav-link">Sign In</a>
+                        <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Sign In</a>
                     </li>
     
                     <li class="nav-item mx-1">
-                        <a href="#" class="nav-link">Sign Up</a>
+                        <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptionsReg" aria-controls="offcanvasWithBothOptionsReg">Sign Up</a>
                     </li>
                 </ul>
             </div>
@@ -92,7 +92,7 @@
             <p class="text-white" style="max-width: 600px; line-height: 30px;  font-size: 1.1rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur necessitatibus, aliquid quisquam vitae, itaque accusantium repellendus fuga quod accusamus illum harum, voluptate pariatur voluptates dolor cum. Maiores, veritatis provident.</p>
             <p class="text-white" style="max-width: 600px; line-height: 30px;  font-size: 1.1rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur necessitatibus, aliquid quisquam vitae, itaque accusantium repellendus fuga quod accusamus illum harum, voluptate pariatur voluptates dolor cum. Maiores, veritatis provident.</p>
 
-            <button class="btn btn-warning px-4 mt-4">JOIN US</button>
+            <button class="btn btn-warning px-4 mt-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">JOIN US</button>
         </div>
 
     </header>
@@ -239,7 +239,7 @@
                             <li class="list-group-item border-0 my-2 border-bottom bg-dark text-white">Lorem ipsum dolor sit.</li>
                             <li class="list-group-item border-0 my-2 border-bottom bg-dark text-white">Lorem ipsum dolor sit.</li>
                             <li class="list-group-item border-0 my-2 bg-dark text-white">
-                                <button class="text-uppercase btn btn-danger">Sign Up Now</button>
+                                <button class="text-uppercase btn btn-danger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptionsReg" aria-controls="offcanvasWithBothOptionsRe#offcanvasWithBothOptionsReg">Sign Up Now</button>
                             </li>
                         </ul>
                     </div>
@@ -750,6 +750,60 @@
     <!-- Arrow Button -->
     <div style="position: fixed; bottom: 15px; right: 15px;">
         <a href="#header" class="btn btn-outline-light" style="font-size: 25px;"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- Offcanvas Section -->
+
+    <!-- Log In Offcanvas -->
+    <div class="offcanvas offcanvas-end bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header text-white">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Log In</h5>
+            <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-white">
+            <form action="">
+                <div class="my-3">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="my-3">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+
+                <button class="btn btn-outline-light">Sing In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sing Up Offcanvas -->
+    <div class="offcanvas offcanvas-end bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptionsReg" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header text-white">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Register</h5>
+            <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-white">
+            <form action="">
+                <div class="my-3">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="my-3">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="my-3">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="my-3">
+                    <label for="">Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+
+                <button class="btn btn-outline-light">Register</button>
+            </form>
+        </div>
     </div>
 
     <!-- Bootstrap JavaScript Bundle with Popper -->
